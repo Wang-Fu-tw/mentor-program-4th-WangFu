@@ -7,22 +7,31 @@
 
 3.我們要如何執行應用程式呢？就如同我們在視窗介面上操作，打開桌面上 Chrome 瀏覽器上網：
 我的電腦 → 本磁碟機(C:) → Users → MyName → Desktop → Chrome.exe-捷徑
-所以首先，我們要知道我們身處在哪，我們可以在 Git Bash 中鍵入 'pwd' ，螢幕就會顯示我們的所在，例如方才的桌面：
+所以首先，我們要知道我們身處在哪，我們可以在 Git Bash 中鍵入 `pwd` ，螢幕就會顯示我們的所在，例如方才的桌面：
+
+``` bash
 MyName@LAPTOP-26U0KHMK MINGW64 ~/Desktop
 $ pwd
 /c/Users/MyName/Desktop
+```
 
-4.那我想去別的地方，比如 D 槽看我的收藏呢？我們會用到另一個指令 'cd' ，在 Git Bash 中鍵入 'cd d:' 我們就可以找到 d 槽了：
+4.那我想去別的地方，比如 D 槽看我的收藏呢？我們會用到另一個指令 `cd` ，在 Git Bash 中鍵入 `cd d:` 我們就可以找到 d 槽了：
+
+``` bash
 MyName@LAPTOP-26U0KHMK MINGW64 ~/Desktop
 $ cd d:
 
 MyName@LAPTOP-26U0KHMK MINGW64 /d
 $ 
 如此我們就可以在資料夾間來回穿梭了。
+```
 
-5.但我們沒有視窗我怎麼知道這裡有什麼呢？這裡就不得不提 'ls'，在 Git Bash 中鍵入 'ls' ：
+5.但我們沒有視窗我怎麼知道這裡有什麼呢？這裡就不得不提 `ls`，在 Git Bash 中鍵入 `ls` ：
+
+``` bash
 MyName@LAPTOP-26U0KHMK MINGW64 /d
 $ ls
- secret/                   Backup/                        怕.jpg
+ secret/                   Backup/                        怕.jpg'
+```
 
-6.最後還可以使用 'help' 查詢各種指令。期待你的發現！
+6.最後還可以使用 `help` 查詢各種指令。期待你的發現！

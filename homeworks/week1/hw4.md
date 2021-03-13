@@ -28,36 +28,36 @@ e.當多人協作時，我的改動如何避免覆蓋與被覆蓋、又如何規
 a.版本控制項新增哪些未註冊檔案
 	
 ``` bash
-		Changes to be committed:
-			(use "git restore --staged <file>..." to unstage)
-				new file:   new-add.txt
+Changes to be committed:
+	(use "git restore --staged <file>..." to unstage)
+		new file:   new-add.txt
 ```			
 	
-	每當我們新建想控制的檔案，就可以利用 `git add filename`	將其加入版本控制項，此時 `git status` 顯示新檔案已做好等待註冊的準備。
+每當我們新建想控制的檔案，就可以利用 `git add filename`	將其加入版本控制項，此時 `git status` 顯示新檔案已做好等待註冊的準備。
 
 
 b.版本控制項修改了哪些檔案等待註冊
 	
 ``` bash
-		Changes not staged for commit:
-			(use "git add <file>..." to update what will be committed)
-			(use "git restore <file>..." to discard changes in working directory)
-				modified:   code.js
+Changes not staged for commit:
+	(use "git add <file>..." to update what will be committed)
+	(use "git restore <file>..." to discard changes in working directory)
+		modified:   code.js
 ```		
 	
-	當我們對已註冊檔案修改時， `git status` 將會顯示那些檔案修改過且需要更新註冊。
+當我們對已註冊檔案修改時， `git status` 將會顯示那些檔案修改過且需要更新註冊。
 	
 
 c.非控制項有那些檔案
 	
 ``` bash
-		Untracked files:
-			(use "git add <file>..." to include in what will be committed)
-				test.txt
+Untracked files:
+	(use "git add <file>..." to include in what will be committed)
+		test.txt
 ``` 
 	
-	有些檔案其實不需要跟隨版本控制，在沒有 `git add` 之下， `git status` 顯示那些沒有參與版本控制的檔案。
-	P.S. 可以建立一個固定名稱的檔案 .gitignore ，並在其中填入不參與版本控制的檔案名稱，此時系統便會自動忽略該檔案，但要注意 .gitignore 是需要 `add git .gitignore` 加入版本控制的。
+有些檔案其實不需要跟隨版本控制，在沒有 `git add` 之下， `git status` 顯示那些沒有參與版本控制的檔案。
+P.S. 可以建立一個固定名稱的檔案 .gitignore ，並在其中填入不參與版本控制的檔案名稱，此時系統便會自動忽略該檔案，但要注意 .gitignore 是需要 `add git .gitignore` 加入版本控制的。
 
 3.透過 `git commit -am "last version" 註冊新版本，其中雙引號的內容可自由註記，我們可在此註解該版本做了那些升級或改動。
 

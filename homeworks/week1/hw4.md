@@ -131,7 +131,7 @@ P.S. 可以建立一個固定名稱的檔案 .gitignore ，並在其中填入不
 ``` bash
 	MyName@LAPTOP-26U0KHMK MINGW64 ~/Downloads/test (master)
 	$ git checkout newone
-	Switched to branch newone
+	Switched to branch `newone`
 ```	
 	
 若需要回到最主線 master ，透由鍵入 `git checkout master` 即可。
@@ -139,7 +139,7 @@ P.S. 可以建立一個固定名稱的檔案 .gitignore ，並在其中填入不
 ``` bash
 	MyName@LAPTOP-26U0KHMK MINGW64 ~/Downloads/test (newone)
 	$ git checkout master
-	Switched to branch master
+	Switched to branch `master`
 ```	
 	
 9.若我已完成改動，想將 newone 合併回主線 master ，可使用 `git merge newone` 務必注意該命令是將目標分支「合併回」當前所在分支。

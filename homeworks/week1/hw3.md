@@ -20,9 +20,9 @@ MyName@LAPTOP-26U0KHMK MINGW64 /d
 $ 
 如此我們就可以在資料夾間來回穿梭了。
 
-5.但我們沒有視窗我怎麼知道這裡有甚麼呢？這裡就不得不提 'ls'，在 Git Bash 中鍵入 'ls' ：
+5.但我們沒有視窗我怎麼知道這裡有什麼呢？這裡就不得不提 'ls'，在 Git Bash 中鍵入 'ls' ：
 MyName@LAPTOP-26U0KHMK MINGW64 /d
 $ ls
  secret/                   Backup/                        怕.jpg
 
-6.最後還可以使用 'heip' 查詢各種指令。期待你的發現！
+6.最後還可以使用 'help' 查詢各種指令。期待你的發現！

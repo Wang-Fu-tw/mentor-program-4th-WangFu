@@ -59,7 +59,7 @@ Untracked files:
 有些檔案其實不需要跟隨版本控制，在沒有 `git add` 之下， `git status` 顯示那些沒有參與版本控制的檔案。
 P.S. 可以建立一個固定名稱的檔案 .gitignore ，並在其中填入不參與版本控制的檔案名稱，此時系統便會自動忽略該檔案，但要注意 .gitignore 是需要 `add git .gitignore` 加入版本控制的。
 
-3.透過 `git commit -am "last version" 註冊新版本，其中雙引號的內容可自由註記，我們可在此註解該版本做了那些升級或改動。
+3.透過 `git commit -am "last version"` 註冊新版本，其中雙引號的內容可自由註記，我們可在此註解該版本做了那些升級或改動。
 
 ``` bash
 	MyName@LAPTOP-26U0KHMK MINGW64 ~/Downloads/test (master)
@@ -131,7 +131,7 @@ P.S. 可以建立一個固定名稱的檔案 .gitignore ，並在其中填入不
 ``` bash
 	MyName@LAPTOP-26U0KHMK MINGW64 ~/Downloads/test (master)
 	$ git checkout newone
-	Switched to branch `newone`
+	Switched to branch newone
 ```	
 	
 若需要回到最主線 master ，透由鍵入 `git checkout master` 即可。
@@ -139,7 +139,7 @@ P.S. 可以建立一個固定名稱的檔案 .gitignore ，並在其中填入不
 ``` bash
 	MyName@LAPTOP-26U0KHMK MINGW64 ~/Downloads/test (newone)
 	$ git checkout master
-	Switched to branch `master`
+	Switched to branch master
 ```	
 	
 9.若我已完成改動，想將 newone 合併回主線 master ，可使用 `git merge newone` 務必注意該命令是將目標分支「合併回」當前所在分支。
